@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97D2C51F264AD96B007EC811 /* RecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C51E264AD96B007EC811 /* RecordsViewModel.swift */; };
+		97D2C523264AF040007EC811 /* RecordListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C522264AF040007EC811 /* RecordListItem.swift */; };
+		97D2C525264AF154007EC811 /* RecordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C524264AF154007EC811 /* RecordList.swift */; };
+		97D2C527264AF1FA007EC811 /* RecordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C526264AF1FA007EC811 /* RecordDetailView.swift */; };
 		97DA23D4264AD07600894199 /* CovidVaccineCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA23D3264AD07600894199 /* CovidVaccineCardApp.swift */; };
-		97DA23D6264AD07600894199 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA23D5264AD07600894199 /* ContentView.swift */; };
+		97DA23D6264AD07600894199 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA23D5264AD07600894199 /* MainView.swift */; };
 		97DA23D8264AD07800894199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DA23D7264AD07800894199 /* Assets.xcassets */; };
 		97DA23DB264AD07800894199 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DA23DA264AD07800894199 /* Preview Assets.xcassets */; };
+		97DA23E3264AD12500894199 /* VaccineRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA23E2264AD12500894199 /* VaccineRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97D2C51E264AD96B007EC811 /* RecordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewModel.swift; sourceTree = "<group>"; };
+		97D2C522264AF040007EC811 /* RecordListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListItem.swift; sourceTree = "<group>"; };
+		97D2C524264AF154007EC811 /* RecordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordList.swift; sourceTree = "<group>"; };
+		97D2C526264AF1FA007EC811 /* RecordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDetailView.swift; sourceTree = "<group>"; };
 		97DA23D0264AD07600894199 /* CovidVaccineCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidVaccineCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DA23D3264AD07600894199 /* CovidVaccineCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidVaccineCardApp.swift; sourceTree = "<group>"; };
-		97DA23D5264AD07600894199 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97DA23D5264AD07600894199 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		97DA23D7264AD07800894199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97DA23DA264AD07800894199 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97DA23DC264AD07800894199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97DA23E2264AD12500894199 /* VaccineRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97333378264AD451008E0F5B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		97333379264AD463008E0F5B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				97D2C51E264AD96B007EC811 /* RecordsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9733337A264AD46E008E0F5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97DA23D5264AD07600894199 /* MainView.swift */,
+				97D2C524264AF154007EC811 /* RecordList.swift */,
+				97D2C522264AF040007EC811 /* RecordListItem.swift */,
+				97D2C526264AF1FA007EC811 /* RecordDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9733337B264AD475008E0F5B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				97DA23DC264AD07800894199 /* Info.plist */,
+				97DA23D3264AD07600894199 /* CovidVaccineCardApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9733337C264AD47D008E0F5B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				97DA23D7264AD07800894199 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9733337D264AD489008E0F5B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		97DA23C7264AD07600894199 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +112,13 @@
 		97DA23D2264AD07600894199 /* CovidVaccineCard */ = {
 			isa = PBXGroup;
 			children = (
-				97DA23D3264AD07600894199 /* CovidVaccineCardApp.swift */,
-				97DA23D5264AD07600894199 /* ContentView.swift */,
-				97DA23D7264AD07800894199 /* Assets.xcassets */,
-				97DA23DC264AD07800894199 /* Info.plist */,
+				9733337B264AD475008E0F5B /* App */,
+				9733337C264AD47D008E0F5B /* Assets */,
+				97DA23E4264AD39E00894199 /* Models */,
+				97333378264AD451008E0F5B /* Repositories */,
+				97333379264AD463008E0F5B /* ViewModels */,
+				9733337A264AD46E008E0F5B /* Views */,
+				9733337D264AD489008E0F5B /* Utils */,
 				97DA23D9264AD07800894199 /* Preview Content */,
 			);
 			path = CovidVaccineCard;
@@ -67,6 +130,14 @@
 				97DA23DA264AD07800894199 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97DA23E4264AD39E00894199 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97DA23E2264AD12500894199 /* VaccineRecord.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97DA23D6264AD07600894199 /* ContentView.swift in Sources */,
+				97D2C527264AF1FA007EC811 /* RecordDetailView.swift in Sources */,
+				97DA23D6264AD07600894199 /* MainView.swift in Sources */,
 				97DA23D4264AD07600894199 /* CovidVaccineCardApp.swift in Sources */,
+				97D2C51F264AD96B007EC811 /* RecordsViewModel.swift in Sources */,
+				97D2C523264AF040007EC811 /* RecordListItem.swift in Sources */,
+				97DA23E3264AD12500894199 /* VaccineRecord.swift in Sources */,
+				97D2C525264AF154007EC811 /* RecordList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +347,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CovidVaccineCard/Preview Content\"";
 				DEVELOPMENT_TEAM = 4SL8JB2S9S;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CovidVaccineCard/Info.plist;
+				INFOPLIST_FILE = CovidVaccineCard/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +369,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CovidVaccineCard/Preview Content\"";
 				DEVELOPMENT_TEAM = 4SL8JB2S9S;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CovidVaccineCard/Info.plist;
+				INFOPLIST_FILE = CovidVaccineCard/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

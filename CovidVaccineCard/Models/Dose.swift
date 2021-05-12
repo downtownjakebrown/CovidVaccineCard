@@ -15,16 +15,3 @@ struct Dose: Identifiable, Codable {
     var date: Date = Date()
     var site: String = ""
 }
-
-enum DoseType: String, Codable {
-    case firstDose
-    case secondDose
-    case other
-    var string: String {
-        switch self {
-        case .firstDose: return "First Dose"
-        case .secondDose: return "Second Dose"
-        case .other: return "Other"
-        }
-    }
-}

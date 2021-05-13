@@ -24,7 +24,7 @@ struct RecordView: View {
                 }
                 .padding()
             }
-            .navigationTitle("Vaccine Record")
+            .navigationTitle("Summary")
             .navigationBarItems(trailing: InfoViewButton())
             .navigationBarTitleDisplayMode(.large)
         }

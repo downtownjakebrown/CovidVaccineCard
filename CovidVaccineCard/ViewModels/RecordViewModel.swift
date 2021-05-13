@@ -52,7 +52,7 @@ class RecordViewModel: ObservableObject {
         
     }
     
-    func loadImage(_ cardSide: CardSide) -> Image? {
+    func loadImage(_ cardSide: CardSide) -> UIImage? {
         guard
             let docsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
             let cardURL = cardSide == .front ? record.cardImageFront : record.cardImageBack
@@ -63,7 +63,7 @@ class RecordViewModel: ObservableObject {
         do {
             let imageData = try Data(contentsOf: fileURL)
             if let uiImage = UIImage(data: imageData) {
-                return Image(uiImage: uiImage)
+                return uiImage
             }
         } catch {}
         return nil

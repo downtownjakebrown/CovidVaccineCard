@@ -12,11 +12,14 @@ struct InfoViewButton: View {
         NavigationLink(
             destination: InfoView(),
             label: {
-                Image(systemName: "questionmark.circle.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .imageScale(.large)
-                    .foregroundColor(.blue)
+                HStack {
+                    Spacer()
+                    Image(systemName: "questionmark.circle.fill")
+                        .imageScale(.large)
+                        .foregroundColor(.blue)
+                        .frame(width: 28, height: 28)
+                }
+                .frame(width: 40, height: 40)
             }
         )
     }

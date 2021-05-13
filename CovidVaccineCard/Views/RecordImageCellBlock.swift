@@ -10,6 +10,7 @@ import SwiftUI
 struct RecordImageCellBlock: View {
     
     @EnvironmentObject var recordVM: RecordViewModel
+    @Environment(\.colorScheme) var colorScheme
     
     let cardSide: CardSide
     
@@ -41,12 +42,12 @@ struct RecordImageCellBlock: View {
                 
             } else {
                 RoundedRectangle(cornerRadius: 10, style: .continuous)
-                    .fill(Color.gray.opacity(0.2))
+                    .fill(colorScheme == .light ? Color.gray.opacity(0.15) : Color.gray.opacity(0.1))
                     .frame(height: 100)
                     .overlay(
                         Text(cardSide == .front ? "Front" : "Back")
                         .font(.subheadline)
-                        .foregroundColor(Color.gray.opacity(0.9))
+                        .foregroundColor(Color.gray)
                     )
             }
         }
@@ -64,14 +65,14 @@ struct RecordImageCellBlock: View {
                         .navigationBarTitleDisplayMode(.inline)
                         .navigationBarItems(
                             leading: replaceButton,
-                            trailing: Button("Done", action: { self.showSheet = false })
+                            trailing: shareButton
                         )
                 }
             }
         }
         .actionSheet(isPresented: $showingActionSheet) {
             ActionSheet(
-                title: Text("How do you want to add photos?"),
+                title: Text("How do you want to add a photo?"),
                 buttons: [
                     .default(Text("Camera"))        { showImagePicker(.camera)           },
                     .default(Text("Photo Library")) { showImagePicker(.photoLibrary)     },
@@ -104,6 +105,22 @@ struct RecordImageCellBlock: View {
                 self.showingActionSheet = true
             }
         })
+    }
+    
+    var shareButton: some View {
+        Button(action: {
+            
+            self.showSheet = false
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                guard let urlShare = URL(string: "https://developer.apple.com/xcode/swiftui/") else { return }
+                let activityVC = UIActivityViewController(activityItems: [urlShare], applicationActivities: nil)
+                UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+            }
+            
+        }) {
+            Image(systemName: "square.and.arrow.up")
+        }
     }
     
 }

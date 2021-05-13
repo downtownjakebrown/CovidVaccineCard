@@ -13,6 +13,8 @@ struct RecordAddDoseButton: View {
     
     @State private var showingAlert = false
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         Button(action: {
             showingAlert = true
@@ -24,7 +26,7 @@ struct RecordAddDoseButton: View {
                 Image(systemName: "plus")
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(.white)
+                    .foregroundColor(colorScheme == .light ? Color.white : Color(UIColor.systemBackground))
                     .padding()
             }
             .frame(width: 50, height: 50)

@@ -99,6 +99,7 @@ struct RecordDoseCell: View {
 fileprivate struct DeleteButton: View {
     
     @EnvironmentObject var recordVM: RecordViewModel
+    @Environment(\.colorScheme) var colorScheme
     
     let dose: Dose
     
@@ -110,7 +111,7 @@ fileprivate struct DeleteButton: View {
         }) {
             Image(systemName: "multiply.circle.fill")
             .resizable().scaledToFit().frame(width: 18, height: 18)
-            .foregroundColor(Color.gray.opacity(0.8))
+                .foregroundColor(colorScheme == .light ? Color.gray.opacity(0.7) : Color.white.opacity(0.4))
         }
         .alert(isPresented: $showingAlert, content: {
             Alert(

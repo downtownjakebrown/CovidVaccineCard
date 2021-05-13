@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct RecordCellBackground: View {
+    
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         RoundedRectangle(cornerRadius: 10, style: .continuous)
-        .fill(Color.white)
-        .shadow(color: Color.gray.opacity(0.3), radius: 10)
+            .paletteBackground()
+            .paletteShadow()
     }
+    
 }

@@ -25,6 +25,7 @@
 		97D2C545264C519F007EC811 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C544264C519F007EC811 /* ImagePicker.swift */; };
 		97D2C547264C5215007EC811 /* CardSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C546264C5215007EC811 /* CardSide.swift */; };
 		97D2C549264C52F4007EC811 /* DoseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C548264C52F4007EC811 /* DoseType.swift */; };
+		97D2C54B264D52CC007EC811 /* Utils+DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D2C54A264D52CC007EC811 /* Utils+DarkMode.swift */; };
 		97DA23D4264AD07600894199 /* CovidVaccineCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA23D3264AD07600894199 /* CovidVaccineCardApp.swift */; };
 		97DA23D6264AD07600894199 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DA23D5264AD07600894199 /* MainView.swift */; };
 		97DA23D8264AD07800894199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DA23D7264AD07800894199 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		97D2C544264C519F007EC811 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		97D2C546264C5215007EC811 /* CardSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSide.swift; sourceTree = "<group>"; };
 		97D2C548264C52F4007EC811 /* DoseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoseType.swift; sourceTree = "<group>"; };
+		97D2C54A264D52CC007EC811 /* Utils+DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utils+DarkMode.swift"; sourceTree = "<group>"; };
 		97DA23D0264AD07600894199 /* CovidVaccineCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidVaccineCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DA23D3264AD07600894199 /* CovidVaccineCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidVaccineCardApp.swift; sourceTree = "<group>"; };
 		97DA23D5264AD07600894199 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -92,9 +94,9 @@
 			children = (
 				97DA23D5264AD07600894199 /* MainView.swift */,
 				97D2C524264AF154007EC811 /* RecordView.swift */,
-				97D2C52A264B25CA007EC811 /* RecordInfoCell.swift */,
 				97D2C52C264B25DB007EC811 /* RecordImageCell.swift */,
 				97D2C542264C5175007EC811 /* RecordImageCellBlock.swift */,
+				97D2C52A264B25CA007EC811 /* RecordInfoCell.swift */,
 				97D2C52E264B25EB007EC811 /* RecordDoseCell.swift */,
 				97D2C530264B2630007EC811 /* RecordCellBackground.swift */,
 				97D2C53C264C1251007EC811 /* RecordCellHeader.swift */,
@@ -128,6 +130,7 @@
 		9733337D264AD489008E0F5B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				97D2C54A264D52CC007EC811 /* Utils+DarkMode.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				97D2C545264C519F007EC811 /* ImagePicker.swift in Sources */,
 				97D2C547264C5215007EC811 /* CardSide.swift in Sources */,
 				97D2C549264C52F4007EC811 /* DoseType.swift in Sources */,
+				97D2C54B264D52CC007EC811 /* Utils+DarkMode.swift in Sources */,
 				97D2C52D264B25DB007EC811 /* RecordImageCell.swift in Sources */,
 				97D2C53B264C1139007EC811 /* RecordCellDateField.swift in Sources */,
 				97DA23D4264AD07600894199 /* CovidVaccineCardApp.swift in Sources */,

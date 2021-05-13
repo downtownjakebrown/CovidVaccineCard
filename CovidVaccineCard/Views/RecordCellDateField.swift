@@ -33,9 +33,9 @@ struct RecordCellDateField: View {
                 }
             }) {
                 HStack {
-                    Text(label).font(.body).foregroundColor(.black)
+                    Text(label).font(.body).foregroundColor(Color.primary)
                     Spacer()
-                    Text(dateFormatter.string(from: date)).font(.body).foregroundColor(.black)
+                    Text(dateFormatter.string(from: date)).font(.body).foregroundColor(Color.primary)
                 }
             }
             

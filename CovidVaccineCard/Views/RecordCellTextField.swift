@@ -26,6 +26,7 @@ struct RecordCellTextField: View {
             )
             .font(.body)
             .multilineTextAlignment(.trailing)
+            .disableAutocorrection(true)
         }
     }
     

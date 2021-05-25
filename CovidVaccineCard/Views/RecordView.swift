@@ -27,7 +27,7 @@ struct RecordView: View {
             .navigationTitle("Summary")
             .navigationBarItems(trailing: InfoViewButton())
             .navigationBarTitleDisplayMode(.large)
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
     
 }

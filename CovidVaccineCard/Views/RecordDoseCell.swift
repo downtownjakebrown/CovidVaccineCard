@@ -49,7 +49,7 @@ struct RecordDoseCell: View {
                 
                 RecordCellTextField(
                     label: "Manufacturer:",
-                    placeholder: "make",
+                    placeholder: "maker",
                     text: $doseMake
                 )
                 

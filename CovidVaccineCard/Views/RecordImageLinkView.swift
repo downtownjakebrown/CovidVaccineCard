@@ -57,8 +57,14 @@ struct RecordImageLinkView: View {
     var shareButton: some View {
         Button(action: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                
+                
+                // for iPhone
                 let activityVC = UIActivityViewController(activityItems: [uiImage], applicationActivities: nil)
                 UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
+                
+                // for iPad?
+                
             }
         }) {
             HStack {

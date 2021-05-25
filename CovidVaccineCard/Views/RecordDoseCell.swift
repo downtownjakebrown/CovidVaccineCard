@@ -1,8 +1,5 @@
 //
-//  RecordDoseCell.swift
-//  CovidVaccineCard
-//
-//  Created by jacob brown on 5/11/21.
+// See LICENSE file for this project’s licensing information.
 //
 
 import SwiftUI
@@ -39,7 +36,7 @@ struct RecordDoseCell: View {
                 RecordCellHeader(
                     image: "heart.circle.fill",
                     color: Color.red,
-                    label: dose.doseType.string
+                    label: dose.doseType.asString
                 )
                 DeleteButton(dose: dose)
             }

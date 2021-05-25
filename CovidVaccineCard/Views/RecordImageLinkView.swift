@@ -1,8 +1,5 @@
 //
-//  RecordImageLinkView.swift
-//  CovidVaccineCard
-//
-//  Created by jacob brown on 5/13/21.
+// See LICENSE file for this project’s licensing information.
 //
 
 import SwiftUI
@@ -57,14 +54,8 @@ struct RecordImageLinkView: View {
     var shareButton: some View {
         Button(action: {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                
-                
-                // for iPhone
                 let activityVC = UIActivityViewController(activityItems: [uiImage], applicationActivities: nil)
                 UIApplication.shared.windows.first?.rootViewController?.present(activityVC, animated: true, completion: nil)
-                
-                // for iPad?
-                
             }
         }) {
             HStack {

@@ -1,8 +1,5 @@
 //
-//  MainView.swift
-//  CovidVaccineCard
-//
-//  Created by jacob brown on 5/11/21.
+// See LICENSE file for this project’s licensing information.
 //
 
 import SwiftUI

@@ -1,8 +1,5 @@
 //
-//  DoseType.swift
-//  CovidVaccineCard
-//
-//  Created by jacob brown on 5/12/21.
+// See LICENSE file for this project’s licensing information.
 //
 
 import Foundation
@@ -11,7 +8,7 @@ enum DoseType: String, Codable {
     case firstDose
     case secondDose
     case other
-    var string: String {
+    var asString: String {
         switch self {
         case .firstDose: return "First Dose"
         case .secondDose: return "Second Dose"

@@ -1,8 +1,5 @@
 //
-//  VaccinesViewModel.swift
-//  CovidVaccineCard
-//
-//  Created by jacob brown on 5/11/21.
+// See LICENSE file for this project’s licensing information.
 //
 
 import SwiftUI
@@ -34,39 +31,11 @@ class RecordViewModel: ObservableObject {
     }
     
     func saveImage(_ cardSide: CardSide, image: UIImage) {
-        
-        let fileName: String = cardSide == .front ? "cardImageFront" : "cardImageBack"
-        
-        guard let documentsUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
-        let fileURL = documentsUrl.appendingPathComponent(fileName)
-        
-        if let imageData = image.jpegData(compressionQuality: 1.0) {
-            try? imageData.write(to: fileURL, options: .atomic)
-            if cardSide == .front {
-                record.cardImageFront = fileName
-            } else {
-                record.cardImageBack = fileName
-            }
-            save()
-        }
-        
+        recordRepository.saveImage(cardSide, image: image)
     }
     
     func loadImage(_ cardSide: CardSide) -> UIImage? {
-        guard
-            let docsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first,
-            let cardURL = cardSide == .front ? record.cardImageFront : record.cardImageBack
-        else { return nil }
-        
-        let fileURL = docsURL.appendingPathComponent(cardURL)
-        
-        do {
-            let imageData = try Data(contentsOf: fileURL)
-            if let uiImage = UIImage(data: imageData) {
-                return uiImage
-            }
-        } catch {}
-        return nil
+        recordRepository.loadImage(cardSide)
     }
     
 }

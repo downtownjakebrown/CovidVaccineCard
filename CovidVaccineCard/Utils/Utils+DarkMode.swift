@@ -1,8 +1,5 @@
 //
-//  Utils+DarkMode.swift
-//  CovidVaccineCard
-//
-//  Created by jacob brown on 5/13/21.
+// See LICENSE file for this project’s licensing information.
 //
 
 import SwiftUI

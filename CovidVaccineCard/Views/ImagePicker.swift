@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A helper view for presenting UIKit's UIImagePickerController
 struct ImagePicker: UIViewControllerRepresentable {
     
     @Environment(\.presentationMode) var presentationMode

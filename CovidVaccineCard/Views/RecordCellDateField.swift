@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A standard date picker for cells
 struct RecordCellDateField: View {
     
     @EnvironmentObject var recordVM: RecordViewModel

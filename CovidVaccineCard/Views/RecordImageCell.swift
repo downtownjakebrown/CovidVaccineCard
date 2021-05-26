@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A cell for displaying thumbnails of the card images
 struct RecordImageCell: View {
     
     var body: some View {

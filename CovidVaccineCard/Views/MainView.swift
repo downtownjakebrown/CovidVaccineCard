@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// The main view of the app
 struct MainView: View {
     var body: some View {
         RecordView().environmentObject(RecordViewModel())

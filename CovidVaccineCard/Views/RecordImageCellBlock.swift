@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A view for displaying a thumbnail of a card image, and linking to a detail view
 struct RecordImageCellBlock: View {
     
     @EnvironmentObject var recordVM: RecordViewModel

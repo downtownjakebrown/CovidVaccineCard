@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A standard text field for cells
 struct RecordCellTextField: View {
     
     @EnvironmentObject var recordVM: RecordViewModel

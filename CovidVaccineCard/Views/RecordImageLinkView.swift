@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A view containing a link to a detail image view
 struct RecordImageLinkView: View {
         
     @EnvironmentObject var recordVM: RecordViewModel

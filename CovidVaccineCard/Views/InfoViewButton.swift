@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A button to link to the app's info view
 struct InfoViewButton: View {
     var body: some View {
         NavigationLink(

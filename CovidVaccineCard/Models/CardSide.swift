@@ -4,6 +4,7 @@
 
 import Foundation
 
+/// The side of the vaccine card captured in an image
 enum CardSide {
     case front
     case back

@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// The main record view
 struct RecordView: View {
     
     @EnvironmentObject var recordVM: RecordViewModel

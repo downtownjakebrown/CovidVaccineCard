@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A standard background for cells
 struct RecordCellBackground: View {
     
     @Environment(\.colorScheme) var colorScheme

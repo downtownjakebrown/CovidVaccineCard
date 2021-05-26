@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A button to add a new dose cell
 struct RecordAddDoseButton: View {
     
     @EnvironmentObject var recordVM: RecordViewModel

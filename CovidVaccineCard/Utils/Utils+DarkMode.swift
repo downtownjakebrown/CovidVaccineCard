@@ -6,6 +6,7 @@ import SwiftUI
 
 extension Color {
     
+    /// A standard background color for our app
     static var background: Color {
         Color(UIColor.secondarySystemBackground)
     }
@@ -14,6 +15,8 @@ extension Color {
 
 extension View {
     
+    /// A standard shadow modifier for our app
+    /// - Returns: A view with added shadow
     func paletteShadow() -> some View {
         return self.modifier(ShadowModifier())
     }
@@ -22,13 +25,16 @@ extension View {
 
 extension Shape {
     
+    /// A standard background fill modifier for our app
+    /// - Returns: A view with added background fill
     func paletteBackground() -> some View {
         self.modifier(BackgroundFillModifier(shape: self))
     }
     
 }
 
-struct ShadowModifier: ViewModifier {
+/// A standard shadow modifier for our app
+fileprivate struct ShadowModifier: ViewModifier {
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -45,7 +51,8 @@ struct ShadowModifier: ViewModifier {
     
 }
 
-struct BackgroundFillModifier<MyShape: Shape>: ViewModifier {
+/// A standard background fill modifier for our app
+fileprivate struct BackgroundFillModifier<MyShape: Shape>: ViewModifier {
     
     @Environment(\.colorScheme) var colorScheme
     

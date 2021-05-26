@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A standard header for cells
 struct RecordCellHeader: View {
     
     let image: String

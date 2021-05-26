@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A cell for displaying dose info
 struct RecordDoseCell: View {
     
     @EnvironmentObject var recordVM: RecordViewModel

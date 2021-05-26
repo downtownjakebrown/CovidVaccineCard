@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A view for showing information about the app
 struct InfoView: View {
     var body: some View {
         VStack {

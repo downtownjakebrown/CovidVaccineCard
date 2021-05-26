@@ -4,6 +4,7 @@
 
 import SwiftUI
 
+/// A cell for displaying user info
 struct RecordInfoCell: View {
     
     @EnvironmentObject var recordVM: RecordViewModel
